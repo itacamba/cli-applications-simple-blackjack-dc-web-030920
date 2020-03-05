@@ -41,12 +41,11 @@ end
 def hit?(number)
   prompt_user
   if get_user_input == 'h'
-    result = deal_card += number
+      number += deal_card
   elsif get_user_input == 's'
-    result = number
+      number
   elsif get_user_input != 's' && get_user_input != 'h'
     invalid_command
-    prompt_user
   end
   # code hit? here
 end
@@ -62,4 +61,5 @@ end
 
 def runner
   # code runner here
+
 end
