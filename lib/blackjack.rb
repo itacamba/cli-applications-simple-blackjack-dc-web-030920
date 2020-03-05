@@ -39,15 +39,19 @@ def initial_round
 end
 
 def hit?(number)
-  prompt_user
-  if get_user_input == 'h'
-      number += deal_card
-  elsif get_user_input == 's'
-      number
-  elsif get_user_input != 's' && get_user_input != 'h'
-    invalid_command
-  end
-  number
+	loop do
+		prompt_user
+		input = get_user_input
+		if input != 's' && input != 'h'
+			invalid_command
+		elsif input == 'h'
+			p number += deal_card
+			break
+		elsif
+			p number
+			break
+		end
+	end
 end
 
 def invalid_command
