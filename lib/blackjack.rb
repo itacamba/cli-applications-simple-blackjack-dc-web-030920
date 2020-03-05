@@ -45,10 +45,10 @@ def hit?(number)
 		if input != 's' && input != 'h'
 			invalid_command
 		elsif input == 'h'
-			return number += deal_card
+			number += deal_card
 			break
 		elsif
-			return number
+			number
 			break
 		end
 	end
