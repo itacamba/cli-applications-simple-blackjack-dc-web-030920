@@ -38,7 +38,6 @@ def initial_round
   sum
 end
 
-binding.pry
 def hit?(number)
   prompt_user
   if get_user_input == 'h'
