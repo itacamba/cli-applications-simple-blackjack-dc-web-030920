@@ -47,7 +47,7 @@ def hit?(number)
 		elsif input == 'h'
 			number += deal_card
 			break
-		elsif
+		elsif input == 's'
 			number
 			break
 		end
