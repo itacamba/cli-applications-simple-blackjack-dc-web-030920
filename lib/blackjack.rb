@@ -39,6 +39,7 @@ def initial_round
 end
 
 def hit?(number)
+  total = 0
 	loop do
 		prompt_user
 		input = get_user_input
